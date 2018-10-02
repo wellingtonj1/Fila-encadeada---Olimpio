@@ -13,9 +13,9 @@ public:
     void setAnterior(No*);
     void setDados(Pessoa*);
     No* getAnterior();
-    No* montaNo(Pessoa*);
+    static No* montaNo(Pessoa*);
     Pessoa* getDados();
-    Pessoa* desmontaNo(No*);
+    static Pessoa* desmontaNo(No*);
 
 };
 

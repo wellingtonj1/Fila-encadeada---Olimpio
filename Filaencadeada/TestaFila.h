@@ -8,7 +8,7 @@ private:
     Fila objeto;
 public:
     TestaFila();
-    int menu();
+    void menu();
     Pessoa* criarPessoa();
     void mostrarFila();
 
