@@ -20,7 +20,7 @@ No* No::getAnterior()
     return anterior;
 }
 
-static No* No::montaNo(Pessoa* aux)
+No* No::montaNo(Pessoa* aux)
 {
     No* retorno = new No;
     retorno->setAnterior(0);
@@ -31,9 +31,10 @@ static No* No::montaNo(Pessoa* aux)
 Pessoa* No::getDados()
 {
     return dados;
+
 }
 
-static Pessoa* No::desmontaNo(No* aux)
+Pessoa* No::desmontaNo(No* aux)
 {
     if(aux==0)
         return 0;

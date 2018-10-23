@@ -9,11 +9,11 @@ void TestaFila::menu()
 {
     Pessoa* aux;
     bool ok;
-    int x,op;
+    int x;
     do
     {
         std::cout<<"\n1 - Para Inserir uma pessoa a fila \n";
-        std::cout<<"2 - Para Remover uma pessoa da lista \n";
+        std::cout<<"2 - Para Remover uma pessoa da fila \n";
         std::cout<<"3 - Para mostrar as pessoas inseridas \n";
         std::cout<<"4 - Para Sair do programa \n";
         std::cout<<"Sua escolha [  ] \b\b\b\b";
@@ -33,7 +33,10 @@ void TestaFila::menu()
             case 2://remove pessoa
 
                 aux=objeto.desenfileirar();
-                if(aux!=0) { std::cout<<aux->getLivro(); }
+                if(aux!=0)
+                {
+                    std::cout<<aux->getpessoa();
+                }
                 else { std::cout<<"\n\tErro!!!\n"; }
                 aux=0;
 
